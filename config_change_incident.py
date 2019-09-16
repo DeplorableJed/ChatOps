@@ -116,7 +116,7 @@ def get_user_sys_id(username):
 
     # find the ServiceNow user_id for the specified user
 
-    url = SNOW_URL + '/table/sys_user?sysparm_limit=1&name=' + username
+    url = SNOW_URL + '/table/sys_user?sysparm_limit=1'
     headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
     response = requests.get(url, auth=(SNOW_USER, SNOW_PASS), headers=headers)
     user_json = response.json()
