@@ -146,7 +146,7 @@ def create_incident(description, comment, username, severity):
 # main application
 
 logging.basicConfig(
-    filename='/bootflash/DEVWKS-1301-MEL19/application_run.log',
+    filename='/bootflash/ChatOps/application_run.log',
     level=logging.DEBUG,
     format='%(asctime)s.%(msecs)03d %(levelname)s %(module)s - %(funcName)s: %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S')
